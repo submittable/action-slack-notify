@@ -7,8 +7,11 @@ LABEL "com.github.actions.description"="This action will send notification to Sl
 LABEL "org.opencontainers.image.source"="https://github.com/submittable/action-slack-notify"
 #LABEL "org.opencontainers.image.source"="https://github.com/rtCamp/action-slack-notify"
 
-WORKDIR ${GOPATH}/src/github.com/rtcamp/action-slack-notify
-COPY main.go ${GOPATH}/src/github.com/rtcamp/action-slack-notify
+WORKDIR ${GOPATH}/src/github.com/submittable/action-slack-notify
+COPY main.go ${GOPATH}/src/github.com/submittable/action-slack-notify
+
+#WORKDIR ${GOPATH}/src/github.com/rtcamp/action-slack-notify
+#COPY main.go ${GOPATH}/src/github.com/rtcamp/action-slack-notify
 
 ENV CGO_ENABLED 0
 ENV GOOS linux
