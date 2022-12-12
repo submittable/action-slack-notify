@@ -2,12 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: action-slack-notify
-  description: 
+  description: ""
   annotations:
     github.com/project-slug: submittable/action-slack-notify
   tags: []
 spec:
   type: service
   owner: group:submittable/infrastructure
-  lifecycle: experimental
+  lifecycle: production
   
